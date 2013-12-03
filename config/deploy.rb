@@ -21,7 +21,7 @@ namespace :deploy do
   unicorn_conf = "#{deploy_to}/current/config/unicorn.rb"
   unicorn_pid = "#{deploy_to}/shared/pids/unicorn.pid"
 
-  unicorn_start_cmd = "(cd #{deploy_to}/current; rvm use 1.9.3 do bundle exec unicorn_rails -E production -Dc #{unicorn_conf})"
+  unicorn_start_cmd = "(cd #{deploy_to}/current; /usr/local/rvm/bin/rvm use 1.9.3 do bundle exec unicorn_rails -E production -Dc #{unicorn_conf})"
 
   desc "Start application"
   task :start do
