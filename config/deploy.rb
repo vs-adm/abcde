@@ -24,18 +24,24 @@ namespace :deploy do
   unicorn_start_cmd = "(cd #{deploy_to}/current; rvm use 1.9.3 do bundle exec unicorn_rails -E production -Dc #{unicorn_conf})"
 
   desc "Start application"
-  task :start, :app do
-    execute unicorn_start_cmd
+  task :start do
+    on roles(:app) do
+      execute unicorn_start_cmd
+    end
   end
 
   desc "Stop application"
-  task :stop, :app do
-    execute "[ -f #{unicorn_pid} ] && kill -QUIT `cat #{unicorn_pid}`"
+  task :stop do
+    on roles(:app) do
+      execute "[ -f #{unicorn_pid} ] && kill -QUIT `cat #{unicorn_pid}`"
+    end
   end
 
   desc "Restart Application"
-  task :restart, :app do
-    execute "[ -f #{unicorn_pid} ] && kill -USR2 `cat #{unicorn_pid}` || #{unicorn_start_cmd}"
+  task :restart do
+    on roles(:app) do
+      execute "[ -f #{unicorn_pid} ] && kill -USR2 `cat #{unicorn_pid}` || #{unicorn_start_cmd}"
+    end
   end
 
   after :finishing, 'deploy:cleanup'

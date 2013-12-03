@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ca7817d9-2bb5-4678-a9fd-0b0a3fc775ae" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/deploy.rb" afterPath="$PROJECT_DIR$/config/deploy.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="abcde.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,7 +28,7 @@
       <file leaf-file-name="deploy.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="11" selection-start="631" selection-end="631" vertical-scroll-proportion="0.5290557" vertical-offset="0" max-vertical-offset="950">
+            <state line="40" column="16" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.7929782" vertical-offset="124" max-vertical-offset="1064">
               <folding />
             </state>
           </provider>
@@ -638,13 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Capfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy/production.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="22" selection-start="76" selection-end="76" vertical-scroll-proportion="-0.104116224" vertical-offset="124" max-vertical-offset="950">
@@ -659,9 +651,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Capfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="11" selection-start="631" selection-end="631" vertical-scroll-proportion="0.5290557" vertical-offset="0" max-vertical-offset="950">
+        <state line="40" column="16" selection-start="1059" selection-end="1059" vertical-scroll-proportion="0.7929782" vertical-offset="124" max-vertical-offset="1064">
           <folding />
         </state>
       </provider>
