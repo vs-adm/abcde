@@ -1,6 +1,6 @@
 set :stage, :production
 set :rvm_ruby_string, '1.9.3'
-set :rvm_type, :user
+set :rvm_type, :system
 
 # Simple Role Syntax
 # ==================

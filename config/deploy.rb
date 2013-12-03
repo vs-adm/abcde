@@ -16,25 +16,25 @@ set :deploy_to, '/home/rails/projects/abcde'
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 # set :keep_releases, 5
 
-set :unicorn_conf, "#{deploy_to}/current/config/unicorn.rb"
-set :unicorn_pid, "#{deploy_to}/shared/pids/unicorn.pid"
-
-set :unicorn_start_cmd, "(cd #{deploy_to}/current; rvm use 1.9.3 do bundle exec unicorn_rails -E production -Dc #{unicorn_conf})"
-
 namespace :deploy do
 
+  unicorn_conf = "#{deploy_to}/current/config/unicorn.rb"
+  unicorn_pid = "#{deploy_to}/shared/pids/unicorn.pid"
+
+  unicorn_start_cmd = "(cd #{deploy_to}/current; rvm use 1.9.3 do bundle exec unicorn_rails -E production -Dc #{unicorn_conf})"
+
   desc "Start application"
-  task :start, :roles => :app do
+  task :start, :app do
     run unicorn_start_cmd
   end
 
   desc "Stop application"
-  task :stop, :roles => :app do
+  task :stop, :app do
     run "[ -f #{unicorn_pid} ] && kill -QUIT `cat #{unicorn_pid}`"
   end
 
   desc "Restart Application"
-  task :restart, :roles => :app do
+  task :restart, :app do
     run "[ -f #{unicorn_pid} ] && kill -USR2 `cat #{unicorn_pid}` || #{unicorn_start_cmd}"
   end
 

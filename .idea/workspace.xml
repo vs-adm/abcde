@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca7817d9-2bb5-4678-a9fd-0b0a3fc775ae" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Capfile" afterPath="$PROJECT_DIR$/Capfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/abcde.iml" afterPath="$PROJECT_DIR$/.idea/abcde.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/deploy.rb" afterPath="$PROJECT_DIR$/config/deploy.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/deploy/production.rb" afterPath="$PROJECT_DIR$/config/deploy/production.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -31,7 +33,7 @@
       <file leaf-file-name="deploy.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/deploy.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950">
+            <state line="36" column="17" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950">
               <folding />
             </state>
           </provider>
@@ -58,7 +60,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="20" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0" vertical-offset="798" max-vertical-offset="988">
+            <state line="43" column="24" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0" vertical-offset="143" max-vertical-offset="1007">
               <folding />
             </state>
           </provider>
@@ -67,7 +69,7 @@
       <file leaf-file-name="production.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/deploy/production.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="0.06900726" vertical-offset="0" max-vertical-offset="950">
+            <state line="2" column="22" selection-start="76" selection-end="76" vertical-scroll-proportion="0.046004843" vertical-offset="0" max-vertical-offset="950">
               <folding />
             </state>
           </provider>
@@ -93,9 +95,9 @@
         <option value="$PROJECT_DIR$/app/controllers/public_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/public/new.html.erb" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/unicorn.rb" />
         <option value="$PROJECT_DIR$/Capfile" />
+        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/deploy.rb" />
         <option value="$PROJECT_DIR$/config/deploy/production.rb" />
       </list>
@@ -512,7 +514,11 @@
       <created>1386086425039</created>
       <updated>1386086425039</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="RVM FIXES">
+      <created>1386086558404</created>
+      <updated>1386086558404</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -554,7 +560,8 @@
     </option>
     <MESSAGE value="Unicorn support" />
     <MESSAGE value="Unicorn support #2&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Unicorn support #2&#10;" />
+    <MESSAGE value="RVM FIXES" />
+    <option name="LAST_COMMIT_MESSAGE" value="RVM FIXES" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -632,13 +639,6 @@
         <state line="17" column="0" selection-start="473" selection-end="473" vertical-scroll-proportion="0.4022416" vertical-offset="0" max-vertical-offset="803" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="20" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0" vertical-offset="141" max-vertical-offset="988">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/unicorn.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="65" column="7" selection-start="2651" selection-end="2651" vertical-scroll-proportion="0.0" vertical-offset="863" max-vertical-offset="1767">
@@ -653,16 +653,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="24" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0" vertical-offset="143" max-vertical-offset="1007">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950">
+        <state line="36" column="17" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="950">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="75" selection-end="75" vertical-scroll-proportion="0.06900726" vertical-offset="0" max-vertical-offset="950">
+        <state line="2" column="22" selection-start="76" selection-end="76" vertical-scroll-proportion="0.046004843" vertical-offset="0" max-vertical-offset="950">
           <folding />
         </state>
       </provider>
