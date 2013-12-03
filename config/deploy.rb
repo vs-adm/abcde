@@ -1,9 +1,15 @@
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+require "rvm/capistrano"
+require 'bundler/capistrano'
+
+set :rvm_ruby_string, '1.9.3'
+set :rvm_type, :user
+
+set :application, 'abcde'
+set :repo_url, 'git@github.com:vs-adm/abcde.git'
 
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
 
-# set :deploy_to, '/var/www/my_app'
+set :deploy_to, '/home/rails/projects/abcde'
 # set :scm, :git
 
 # set :format, :pretty
