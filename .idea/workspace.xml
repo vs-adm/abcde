@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca7817d9-2bb5-4678-a9fd-0b0a3fc775ae" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -39,7 +38,7 @@
       <file leaf-file-name="Capfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Capfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
+            <state line="14" column="58" selection-start="398" selection-end="452" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
               <folding />
             </state>
           </provider>
@@ -57,7 +56,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="0" selection-start="478" selection-end="478" vertical-scroll-proportion="0.41404358" vertical-offset="0" max-vertical-offset="1007">
+            <state line="44" column="21" selection-start="1174" selection-end="1174" vertical-scroll-proportion="0.7929782" vertical-offset="181" max-vertical-offset="1026">
               <folding />
             </state>
           </provider>
@@ -84,9 +83,9 @@
         <option value="$PROJECT_DIR$/app/views/public/new.html.erb" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/config/unicorn.rb" />
-        <option value="$PROJECT_DIR$/Capfile" />
         <option value="$PROJECT_DIR$/config/deploy/production.rb" />
         <option value="$PROJECT_DIR$/config/deploy.rb" />
+        <option value="$PROJECT_DIR$/Capfile" />
         <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
@@ -510,7 +509,11 @@
       <created>1386087160145</created>
       <updated>1386087160145</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Assets support">
+      <created>1386088377801</created>
+      <updated>1386088377801</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -554,7 +557,8 @@
     <MESSAGE value="Unicorn support #2&#10;" />
     <MESSAGE value="RVM FIXES" />
     <MESSAGE value="Unicorn fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Unicorn fixes" />
+    <MESSAGE value="Assets support" />
+    <option name="LAST_COMMIT_MESSAGE" value="Assets support" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -639,13 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Capfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/deploy.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="68" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="1064">
@@ -660,9 +657,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Capfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="58" selection-start="398" selection-end="452" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="478" selection-end="478" vertical-scroll-proportion="0.41404358" vertical-offset="0" max-vertical-offset="1007">
+        <state line="44" column="21" selection-start="1174" selection-end="1174" vertical-scroll-proportion="0.7929782" vertical-offset="181" max-vertical-offset="1026">
           <folding />
         </state>
       </provider>
