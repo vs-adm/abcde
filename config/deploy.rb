@@ -25,17 +25,17 @@ namespace :deploy do
 
   desc "Start application"
   task :start, :app do
-    run unicorn_start_cmd
+    execute unicorn_start_cmd
   end
 
   desc "Stop application"
   task :stop, :app do
-    run "[ -f #{unicorn_pid} ] && kill -QUIT `cat #{unicorn_pid}`"
+    execute "[ -f #{unicorn_pid} ] && kill -QUIT `cat #{unicorn_pid}`"
   end
 
   desc "Restart Application"
   task :restart, :app do
-    run "[ -f #{unicorn_pid} ] && kill -USR2 `cat #{unicorn_pid}` || #{unicorn_start_cmd}"
+    execute "[ -f #{unicorn_pid} ] && kill -USR2 `cat #{unicorn_pid}` || #{unicorn_start_cmd}"
   end
 
   after :finishing, 'deploy:cleanup'
