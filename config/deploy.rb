@@ -1,6 +1,3 @@
-require "rvm/capistrano"
-require 'bundler/capistrano'
-
 set :rvm_ruby_string, '1.9.3'
 set :rvm_type, :user
 
@@ -22,23 +19,26 @@ set :deploy_to, '/home/rails/projects/abcde'
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 # set :keep_releases, 5
 
+set :unicorn_conf, "#{deploy_to}/current/config/unicorn.rb"
+set :unicorn_pid, "#{deploy_to}/shared/pids/unicorn.pid"
+
+set :unicorn_start_cmd, "(cd #{deploy_to}/current; rvm use 1.9.3 do bundle exec unicorn_rails -E production -Dc #{unicorn_conf})"
+
 namespace :deploy do
 
-  desc 'Restart application'
-  task :restart do
-    on roles(:app), in: :sequence, wait: 5 do
-      # Your restart mechanism here, for example:
-      # execute :touch, release_path.join('tmp/restart.txt')
-    end
+  desc "Start application"
+  task :start, :roles => :app do
+    run unicorn_start_cmd
   end
 
-  after :restart, :clear_cache do
-    on roles(:web), in: :groups, limit: 3, wait: 10 do
-      # Here we can do anything such as:
-      # within release_path do
-      #   execute :rake, 'cache:clear'
-      # end
-    end
+  desc "Stop application"
+  task :stop, :roles => :app do
+    run "[ -f #{unicorn_pid} ] && kill -QUIT `cat #{unicorn_pid}`"
+  end
+
+  desc "Restart Application"
+  task :restart, :roles => :app do
+    run "[ -f #{unicorn_pid} ] && kill -USR2 `cat #{unicorn_pid}` || #{unicorn_start_cmd}"
   end
 
   after :finishing, 'deploy:cleanup'
